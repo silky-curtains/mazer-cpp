@@ -49,6 +49,7 @@ void generate_maze_dfs(int x, int y, vector<vector<int>>& maze) {
     generate_maze_dfs(nx, ny, maze);
   }
 }
+
 vector<vector<int>> generate_maze(int N, int M) {
   vector<vector<int>> maze(N, vector<int>(M, 1));
   generate_maze_dfs(0, 0, maze);
